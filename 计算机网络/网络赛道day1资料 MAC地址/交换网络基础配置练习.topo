@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00">
+    <devices>
+        <dev id="64203784-5E74-47cf-A613-CFDD2412D249" name="PC2" poe="0" model="PC" settings=" -simpc_ip 0.0.0.0  -simpc_mask 0.0.0.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-6F-1F-FD  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-6F-1F-FD" com_port="0" bootmode="0" cx="998.000000" cy="481.000000" edit_left="1025" edit_top="535">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="68DA8AA7-09C7-4408-AFDC-E29B5B417D74" name="PC3" poe="0" model="PC" settings=" -simpc_ip 0.0.0.0  -simpc_mask 0.0.0.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-B8-3B-F6  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-B8-3B-F6" com_port="0" bootmode="0" cx="703.000000" cy="545.000000" edit_left="730" edit_top="599">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="4091873A-13F6-489c-A6DA-56C58B142A93" name="PC1" poe="0" model="PC" settings=" -simpc_ip 0.0.0.0  -simpc_mask 0.0.0.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-B4-1C-5E  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-B4-1C-5E" com_port="0" bootmode="0" cx="445.000000" cy="487.000000" edit_left="472" edit_top="541">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="367BC47E-1757-4827-BBDE-687DB9D9B62D" name="LSW1" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-4E-48-BD" com_port="2000" bootmode="0" cx="700.000000" cy="226.000000" edit_left="727" edit_top="280">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="4091873A-13F6-489c-A6DA-56C58B142A93" destDeviceID="367BC47E-1757-4827-BBDE-687DB9D9B62D">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="502.178436" srcBoundRect_Y="483.111481" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="696.821594" tarBoundRect_Y="283.888519" tarOffset_X="-50.000000" tarOffset_Y="-7.000000" />
+        </line>
+        <line srcDeviceID="367BC47E-1757-4827-BBDE-687DB9D9B62D" destDeviceID="64203784-5E74-47cf-A613-CFDD2412D249">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="0" srcBoundRect_X="759.810852" srcBoundRect_Y="281.076416" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="992.189148" tarBoundRect_Y="479.923584" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="367BC47E-1757-4827-BBDE-687DB9D9B62D" destDeviceID="68DA8AA7-09C7-4408-AFDC-E29B5B417D74">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="1" srcBoundRect_X="727.406128" srcBoundRect_Y="296.181854" srcOffset_X="-1.000000" srcOffset_Y="13.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="729.593872" tarBoundRect_Y="528.818115" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="660" top="199" right="803" bottom="221" content="192.168.1.0 24" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="376" top="563" right="507" bottom="588" content="192.168.1.1" fontname="Consolas" fontstyle="0" editsize="150" txtcolor="-16777216" txtbkcolor="-8323200" charset="1" />
+        <txttip left="972" top="561" right="1103" bottom="586" content="192.168.1.2" fontname="Consolas" fontstyle="0" editsize="150" txtcolor="-16777216" txtbkcolor="-8323200" charset="1" />
+        <txttip left="668" top="622" right="799" bottom="647" content="192.168.1.3" fontname="Consolas" fontstyle="0" editsize="150" txtcolor="-16777216" txtbkcolor="-8323200" charset="1" />
+        <txttip left="970" top="147" right="1679" bottom="360" content="1.按照题目要求为三台主机配置ip地址，注意无需指定网关&#x0D;&#x0A;2.通过PC1 ping PC2看是否能ping通&#x0D;&#x0A;  查看交换机的mac地址表是否正常学习到PC1\PC2的mac地址表&#x0D;&#x0A;3.修改mac地址表的老化时间为250s&#x0D;&#x0A;4.通过静态的方式为PC2配置静态mac地址表&#x0D;&#x0A;5.在PC3上ping PC1、PC2查看能否ping通（正常可以ping通）；&#x0D;&#x0A;  在交换机上为PC3配置黑洞表项，&#x0D;&#x0A;   配置后要求PC3无法ping通PC1以及PC1；PC1、PC2也无法ping通PC3&#x0D;&#x0A;  " fontname="Consolas" fontstyle="0" editsize="150" txtcolor="-16777216" txtbkcolor="-8323200" charset="1" />
+    </txttips>
+</topo>
