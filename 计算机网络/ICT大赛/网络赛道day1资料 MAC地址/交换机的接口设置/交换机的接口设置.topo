@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00">
+    <devices>
+        <dev id="1A921293-231B-43e7-A981-E21668FB86BC" name="PC3" poe="0" model="PC" settings=" -simpc_ip 192.168.1.1  -simpc_mask 255.255.255.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-3B-2E-2F  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-3B-2E-2F" com_port="0" bootmode="0" cx="773.000000" cy="373.000000" edit_left="800" edit_top="427">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="3009BA4D-B147-4f96-9D72-F7007D8A28B2" name="PC4" poe="0" model="PC" settings=" -simpc_ip 192.168.1.2  -simpc_mask 255.255.255.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-4D-49-71  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-4D-49-71" com_port="0" bootmode="0" cx="1173.000000" cy="368.000000" edit_left="1200" edit_top="422">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="7EF18442-51AF-4355-96A6-A637CDE2656F" name="LSW2" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-F8-5D-6F" com_port="2000" bootmode="0" cx="978.000000" cy="229.000000" edit_left="1005" edit_top="283">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="7EF18442-51AF-4355-96A6-A637CDE2656F" destDeviceID="1A921293-231B-43e7-A981-E21668FB86BC">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="969.663025" srcBoundRect_Y="280.822083" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="835.336975" tarBoundRect_Y="375.177917" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="7EF18442-51AF-4355-96A6-A637CDE2656F" destDeviceID="3009BA4D-B147-4f96-9D72-F7007D8A28B2">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="0" srcBoundRect_X="1040.164429" srcBoundRect_Y="281.065918" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="1164.835571" tarBoundRect_Y="369.934082" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="1298" top="217" right="1657" bottom="296" content="设置静态接口的方法：&#x0D;&#x0A;1、display mac-address ?查看&#x0D;&#x0A;2、mac-address static ?可以一直按？来提示下一步&#x0D;&#x0A;3、配置好以后，display mac-address查看接口情况&#x0D;&#x0A;" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="1302" top="352" right="1736" bottom="384" content="设置黑名单的方法：&#x0D;&#x0A;1、mac-address blackhole 地址 vlan 1（1为默认，可以修改）  " fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="638" top="490" right="1473" bottom="694" content="vlan：&#x0D;&#x0A;定义：&#x0D;&#x0A;VLAN（Virtual Local Area Network）即虚拟局域网，是将一个物理的LAN在逻辑上划分成多个广播域的通信技术。&#x0D;&#x0A;VLAN内的主机间可以直接通信，而VLAN间不能直接通信，&#x0D;&#x0A;从而将广播报文限制在一个VLAN内。&#x0D;&#x0A;&#x0D;&#x0A;目的：&#x0D;&#x0A;以太网是一种基于CSMA/CD（Carrier Sense Multiple Access/Collision Detection）的共享通讯介质的数据网络通讯技术。&#x0D;&#x0A;当主机数目较多时会导致冲突严重、广播泛滥、性能显著下降甚至造成网络不可用等问题。&#x0D;&#x0A;通过交换机实现LAN互连虽然可以解决冲突严重的问题，但仍然不能隔离广播报文和提升网络质量。&#x0D;&#x0A;在这种情况下出现了VLAN技术，这种技术可以把一个LAN划分成多个逻辑的VLAN，每个VLAN是一个广播域，&#x0D;&#x0A;VLAN内的主机间通信就和在一个LAN内一样，而VLAN间则不能直接互通，这样，广播报文就被限制在一个VLAN内。&#x0D;&#x0A;" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>
