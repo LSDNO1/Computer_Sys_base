@@ -6,11 +6,6 @@
                 <interface sztype="Ethernet" interfacename="GE" count="24" />
             </slot>
         </dev>
-        <dev id="7E761867-3B8E-4ea6-8BC6-73198619D0C0" name="LSW2" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-E6-2C-F4" com_port="2002" bootmode="1" cx="762.000000" cy="336.000000" edit_left="789" edit_top="390">
-            <slot number="slot17" isMainBoard="1">
-                <interface sztype="Ethernet" interfacename="GE" count="24" />
-            </slot>
-        </dev>
         <dev id="D746E210-6D91-45dc-95E8-AE2125D3EF0B" name="LSW4" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-F9-67-33" com_port="2003" bootmode="1" cx="584.000000" cy="570.000000" edit_left="611" edit_top="624">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="GE" count="24" />
@@ -26,14 +21,19 @@
                 <interface sztype="Ethernet" interfacename="GE" count="24" />
             </slot>
         </dev>
+        <dev id="3BE41F00-0B88-4b56-8488-7C37D8F46EA3" name="HUB1" poe="0" model="HUB" settings="" system_mac="" com_port="0" bootmode="1" cx="838.000000" cy="570.000000" edit_left="865" edit_top="624">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="16" />
+            </slot>
+        </dev>
         <dev id="696E21C4-6F98-4f87-8B34-DB2A4AAC466C" name="LSW1" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-DB-2F-C6" com_port="2000" bootmode="1" cx="584.000000" cy="94.000000" edit_left="611" edit_top="148">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="GE" count="24" />
             </slot>
         </dev>
-        <dev id="3BE41F00-0B88-4b56-8488-7C37D8F46EA3" name="HUB1" poe="0" model="HUB" settings="" system_mac="" com_port="0" bootmode="1" cx="838.000000" cy="570.000000" edit_left="865" edit_top="624">
+        <dev id="7E761867-3B8E-4ea6-8BC6-73198619D0C0" name="LSW2" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-E6-2C-F4" com_port="2002" bootmode="1" cx="762.000000" cy="336.000000" edit_left="789" edit_top="390">
             <slot number="slot17" isMainBoard="1">
-                <interface sztype="Ethernet" interfacename="Ethernet" count="16" />
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
             </slot>
         </dev>
     </devices>
@@ -72,5 +72,21 @@
         <txttip left="1009" top="309" right="1216" bottom="333" content="4096.0000-0000-0006" fontname="Consolas" fontstyle="0" editsize="140" txtcolor="-16777216" txtbkcolor="-8323200" charset="1" />
         <txttip left="1013" top="639" right="1220" bottom="663" content="4096.0000-0000-0005" fontname="Consolas" fontstyle="0" editsize="140" txtcolor="-16777216" txtbkcolor="-8323200" charset="1" />
         <txttip left="836" top="640" right="903" bottom="667" content="x stp" fontname="Consolas" fontstyle="0" editsize="160" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="663" top="163" right="674" bottom="180" content="d" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="550" top="150" right="561" bottom="182" content="d&#x0D;&#x0A;" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="772" top="311" right="783" bottom="343" content="r&#x0D;&#x0A;" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="413" top="303" right="424" bottom="335" content="r&#x0D;&#x0A;" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="838" top="339" right="849" bottom="356" content="d" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="1098" top="344" right="1109" bottom="361" content="r" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="444" top="393" right="455" bottom="425" content="d&#x0D;&#x0A;" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="589" top="554" right="600" bottom="571" content="a" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="740" top="397" right="751" bottom="414" content="d" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="619" top="547" right="630" bottom="579" content="r&#x0D;&#x0A;" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="822" top="404" right="833" bottom="436" content="d&#x0D;&#x0A;" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="859" top="553" right="870" bottom="570" content="r" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="662" top="577" right="673" bottom="594" content="d" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="811" top="579" right="822" bottom="596" content="a" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="907" top="581" right="918" bottom="598" content="d" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="1056" top="574" right="1067" bottom="591" content="r" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
     </txttips>
 </topo>
