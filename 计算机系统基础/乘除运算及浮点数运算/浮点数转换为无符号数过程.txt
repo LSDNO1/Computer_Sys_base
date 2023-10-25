@@ -1,0 +1,26 @@
+# 浮点数转换
+
+![D:\C++\计算机基础\Computer_Sys_base\计算机系统基础\乘除运算及浮点数运算\IEEE 754标准的浮点数表示形式](D:\C++\计算机基础\Computer_Sys_base\计算机系统基础\乘除运算及浮点数运算\IEEE 754标准的浮点数表示形式.png)
+
+## 浮点数转换无符号数
+
+![image-20231025211636103](C:\Users\WLSD\AppData\Roaming\Typora\typora-user-images\image-20231025211636103.png)
+
+### 测试：
+
+```C++
+	float a=10.00;
+    unsigned b=a;
+    std::cout<<a<<' '<<b<<std::endl;
+```
+
+#### 结果：
+
+```C++
+10 10
+```
+
+#### 解释原因：
+
+C++进行隐式类型转换，将浮点数截断为整数，但不会显示小数部分。因此，你得到的输出是`10 10`。
+
