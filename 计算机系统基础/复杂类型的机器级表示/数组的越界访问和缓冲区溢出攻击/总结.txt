@@ -1,0 +1,9 @@
+# 概要
+
+在本节只需要明白数组地址溢出后程序遭到破坏的原因即可
+
+
+
+![image-20231026093014423](C:\Users\WLSD\AppData\Roaming\Typora\typora-user-images\image-20231026093014423.png)
+
+当数组发生溢出时，会冲掉返回地址，导致程序发生错误
